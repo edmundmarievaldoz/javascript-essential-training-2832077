@@ -19,6 +19,9 @@ const backpack = {
     this.strapLength.left = lengthLeft;
     this.strapLength.right = lengthRight;
   },
+  changeColor: function (newColor) {
+    this.color = newColor;
+  },
 };
 
 console.log("The backpack object:", backpack);
@@ -29,3 +32,9 @@ console.log("Left before:", backpack.strapLength.left);
 backpack.newStrapLength(10, 15);
 
 console.log("Left after:", backpack.strapLength.left);
+
+console.log("this is the color of the backpack before:", backpack.color);
+
+backpack.changeColor("red");
+
+console.log("this is the new color of the backpack: ", backpack.color);
